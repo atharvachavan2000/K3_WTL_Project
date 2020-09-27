@@ -1,3 +1,12 @@
+You can clone this project and directly start working on your application without setting up any initial libraries.<br />
+Suppport is added for:<br />
+-Bootstrap<br />
+-Material-ui (core,lab,icons)<br />
+-React Router Has been set up. (Add your routes in routes.js)<br />
+-Header and Footer can be added in components/Navbars.<br />
+-Redux Store has been set up and connected to chrome dev tools.<br />
+-Redux Thunk has been added to middleware.<br />
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
