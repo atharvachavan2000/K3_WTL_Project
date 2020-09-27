@@ -1,0 +1,54 @@
+.Modal {
+    position: fixed;
+    z-index: 1050;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 2px #ccc;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    /* top: 5%;
+    left: 10%; */
+    width: 100%;
+    transition: all 0.3s ease-out;
+    height: 100%;
+    top: 0;
+    overflow-y: scroll;
+}
+
+.ModalOpen {
+    animation: openModal 0.7s ease-out forwards;
+}
+
+.ModalClose {
+    animation: closeModal 0.7s ease-out forwards;
+}
+
+@keyframes openModal {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(9%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes closeModal {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateX(9%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
